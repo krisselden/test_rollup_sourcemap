@@ -1,0 +1,16 @@
+(function (exports) { 'use strict';
+
+	function _Foo() {
+	}
+
+	function Foo() {
+	}
+
+	Foo.prototype = Object.create(_Foo.prototype);
+	Foo.constructor = Foo;
+	Foo.__proto__ = _Foo;
+
+	exports.Foo = Foo;
+
+})((this.Bundle = {}));
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYnVuZGxlLmpzIiwic291cmNlcyI6WyIvVXNlcnMva3Jpcy9zcmMva3Jpc3NlbGRlbi90ZXN0X3JvbGx1cF9zb3VyY2VtYXAvYmFzZS9mb28uanMiLCIvVXNlcnMva3Jpcy9zcmMva3Jpc3NlbGRlbi90ZXN0X3JvbGx1cF9zb3VyY2VtYXAvZm9vLmpzIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEZvbygpIHtcbn07XG4iLCJpbXBvcnQgQmFzZUZvbyBmcm9tICcuL2Jhc2UvZm9vJztcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gRm9vKCkge1xufVxuXG5Gb28ucHJvdG90eXBlID0gT2JqZWN0LmNyZWF0ZShCYXNlRm9vLnByb3RvdHlwZSk7XG5Gb28uY29uc3RydWN0b3IgPSBGb287XG5Gb28uX19wcm90b19fID0gQmFzZUZvbztcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLENBQWUsU0FBZixJQUEyQixHQUFHO0FBQTlCLENBQ0E7O0FDREEsQ0FFZSxTQUFTLEdBQUcsR0FBRztBQUY5QixDQUdBOztBQUhBLENBS0EsR0FBRyxDQUFDLFNBQVMsR0FBRyxNQUFNLENBQUMsTUFBTSxDQUw3QixJQUtxQyxDQUFDLFNBQVMsQ0FBQztBQUxoRCxDQU1BLEdBQUcsQ0FBQyxXQUFXLEdBQUcsR0FBRztBQU5yQixDQU9BLEdBQUcsQ0FBQyxTQUFTLEdBUGIsSUFPdUIsOzssOzsifQ==

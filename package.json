@@ -1,0 +1,19 @@
+{
+  "name": "test_rollup_sourcemap",
+  "version": "1.0.0",
+  "description": "Test rollup source map",
+  "main": "bundle.js",
+  "devDependencies": {
+    "rollup": "0.14.1",
+    "sorcery": "^0.6.3",
+    "sourcemap-validator": "^1.0.4",
+    "uglify-js": "2.4.24"
+  },
+  "scripts": {
+    "build": "rollup -m inline -f iife -n Bundle -o bundle.js index.js",
+    "minify": "uglifyjs --compress --mangle --source-map bundle.min.js.map --output bundle.min.js -- bundle.js",
+    "test": "npm run build && npm run minify && sorcery -i bundle.min.js && node validate"
+  },
+  "author": "Kris Selden",
+  "license": "MIT"
+}
